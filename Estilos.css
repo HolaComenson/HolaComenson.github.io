@@ -1,144 +1,42 @@
-*{
+body{
     padding: 0;
     margin: 0;
-    text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    background: rgb(36,67,145);
+    background: radial-gradient(circle, rgba(36,67,145,1) 0%, rgba(9,11,44,1) 100%);
 }
 
-html{
-    scroll-behavior: smooth;
+.logo{
+    width: 30%;
+    margin: 30px auto;
 }
 
-/*==========================*/
-/*==========Header==========*/
-/*==========================*/
+.logo img{
+    width: 100%;
+}
 
-.navbar{
-    background-color: #ccffcfb2;
-    position: sticky;
-    top: 0;
-    box-sizing: border-box;
+.galeria{
+    width: 65%;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    border: 10px solid rgba(36,67,145,1);
+    border-radius: 10px;
+}
+
+.pelicula{
+    width: 25%;
     display: flex;
     justify-content: center;
+    align-items: stretch;
+    margin-right: 5px;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
 }
-.navbar a{
-    color: #fff;
-    display: inline;
-    padding: 20px;
+.pelicula:hover{
     width: 100%;
-    text-align: center;
-    color: #000;
-    transition: .3s ease-out all;
-    box-sizing: border-box;
-}
-nav a:hover{
-    background-color: #1d2f3d;
-    color: #fff;
-    text-decoration: none;
 }
 
-.contenedor{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.contenedor__img a img{
-    width: 100%;
-    vertical-align: top;
-    object-fit: cover;
-    object-position: 0 bottom;
-}
-
-/*==========================*/
-/*===========Main===========*/
-/*==========================*/
-
-main{
-    min-height: 100vh;
-}
-
-main .contenido p{
-    margin-bottom: 20px;
-    line-height: 30px;
-    color: #525151;
-}
-
-main .contenido .titulo{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    padding-top: 40px;
-}
-
-main .contenido .fecha{
-    font-size: 14px;
-    color: #b5b5b5;
-
-}
-
-/*==========================*/
-/*===========Aside==========*/
-/*==========================*/
-
-aside{
-    min-width: 25%;
-    margin: 40px 20px 20px 0;
-    height: 100%;
-    background-color: #1d2f3d;
-    padding: 20px;
-    border-radius: 3px;
-    position: sticky;
-    top: 20px;
-}
-
-aside .titulo{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    padding-top: 15px;
-    margin-bottom: 20px;
-    color: #f2f2f2;
-}
-
-aside .indice a{
-    display: block;
-    padding: 0 20px;
-    margin-bottom: 20px;
-    color: #ffcd48;
-}
-
-/*==========================*/
-/*===========footer=========*/
-/*==========================*/
-
-footer .navbar{
-    background-color: #ccffcfb2;
-    position: sticky;
-    bottom: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-}
-footer .navbar a{
-    color: #fff;
-    display: inline;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-    color: #000;
-    transition: .3s ease-out all;
-    box-sizing: border-box;
-}
-footer nav a:hover{
-    background-color: #1d2f3d;
-    color: #fff;
-    text-decoration: none;
-}
-
-footer .navbar .contenedor{
-    width: 60%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+.pelicula:last-child{
+    margin-right: 0;
 }
