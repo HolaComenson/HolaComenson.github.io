@@ -1,0 +1,42 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: rgb(36,67,145);
+    background: radial-gradient(circle, rgba(36,67,145,1) 0%, rgba(9,11,44,1) 100%);
+}
+
+.logo{
+    width: 30%;
+    margin: 30px auto;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.galeria{
+    width: 65%;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    border: 10px solid rgba(36,67,145,1);
+    border-radius: 10px;
+}
+
+.pelicula{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-right: 5px;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+.pelicula:hover{
+    width: 100%;
+}
+
+.pelicula:last-child{
+    margin-right: 0;
+}
